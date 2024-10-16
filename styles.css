@@ -3,9 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+section
+    {
+    padding: 30px 10px;
+    }
+.contain{
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+hr{
+    width: 98%;
+    margin: 20px auto;
+  }
+
+a{
+    text-decoration: none;
+}
 .contain{
     text-align: center;
+    background-color: whitesmoke;
 }
+/*------------------------Barra de busqueda-------------------------*/
 .serch {
     display: flex;
     align-items: center;
@@ -18,31 +38,40 @@
     width: 200px;
 }
 
-.serch button {
+.serch button{
     padding: 10px 20px;
-    background-color:#4CAF50;
+    background-color:#EB5B00;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer; 
-
 }
+.serch button:hover {
+    background-color:#E4003A;
+}
+/*------------------------Barra de navegacion-------------------------*/
+
 
 .navbar{
     position: fixed;
-    top: 5px;
     width: 100%;
-    background-color: #103b54;
+    height: 100px;
+    background: linear-gradient(70deg,white, #FFB200);
     padding: 10px 0;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    z-index: 1000;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
+  
 .logo img{
-    width: 20%;
-    height: 20%;
+    display: flex;
+    max-width: 200px;
+    height: auto;
 }
+
 .anuncios{
     display: flex;
     justify-content: center; /* Centra los elementos horizontalmente */
@@ -50,70 +79,289 @@
   }
   
 .anuncios img{
+    margin-top:70px ;
     max-width: 500px;
     max-height: 500px;
     padding: 2%;
   }
-.nav-links{
+
+/*------------------------Barra de Menu-------------------------*/
+
+  ul, ol {
     list-style:none;
+}
+.menu > li {
+    display: inline-block;
+    margin: 5px;
+}
+.menu i{
+    display: none;
+}
+.menu a {
+    background-color: #EB5B00;
+    color:white;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+    transition: background-color 0,4s ease;
+    border-radius: 3px;
+}
+.menu li a:hover {
+    background-color:#E4003A;
+}
+.menu li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+.menu li:hover > ul {
+    display:block;
+}
+.menu li ul li {
+    background-color: #EB5B00;
+    position:relative;
+}
+.menu li ul li ul {
+    right:-140px;
+    top:0px;
+}
+.check-btn{
+    font-size: 30px;
+    background-color: #EB5B00;
+    color:white;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+    transition: background-color 0,4s ease;
+    border-radius: 3px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+/*------------------------Seccion de Ofertas-------------------------*/
+.cab-article{
+    background-color:#EB5B00;
+    color: #000;
+    text-align: center;
+    flex: 1 1 100%;
+    padding: 20px 0;
+}
+.cab-article img{
+    max-width: 25%;
+}
+.cab-article h1{
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    align-items: center;
+  }
+  
+
+.section img{
+    width: 100%;
+}
+.section{
     display: flex;
-    margin-right: 20px;
+    gap: 15px;
+    flex: 1 1 auto;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
-.nav-links li{
-    margin-left: 20px;
+.section article{
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 5%;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    width: 20%;
 }
-.nav-links a{
-    color: white;
-    text-decoration: none;
+.section article:hover{
+
+}
+.section article p{
+    padding: 10px 10px;
     font-size: 18px;
-    padding: 8px 15px;
+}
+
+/*-------------Formulario de comentario----------------*/
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Efecto hover en el contenedor del formulario */
+.contact-form-container:hover {
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para las etiquetas y campos del formulario */
+.contact-form-container form div {
+    margin-bottom: 20px;
+}
+
+.contact-form-container label {
+    display: block;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 8px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.contact-form-container input, 
+.contact-form-container textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #f3f3f3;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Efecto cuando el campo está enfocado */
+.contact-form-container input:focus, 
+.contact-form-container textarea:focus {
+    border-color: #007BFF;
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.contact-form-container textarea {
+    resize: none;
+    height: 150px;
+}
+
+/* Botones del formulario */
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.contact-form-container button {
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
     transition: background-color 0.3s ease;
 }
-.nav-links a:hover{
-    background-color: #575757;
-    border-radius: 5px;
+
+/* Botón de limpiar */
+.contact-form-container button[type="reset"] {
+    background-color: #e74c3c;
+    color: #fff;
 }
+
+/* Botón de enviar */
+.contact-form-container button[type="submit"] {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+/* Hover en los botones */
+.contact-form-container button:hover {
+    opacity: 0.85;
+}
+
+
 footer{
-    flex-direction: row;
-    justify-content: space-between;
+    background-color: rgb(78, 78, 78);
 }
-.social li{
-    list-style:none;
+
+.list-inf{
     display: flex;
-    margin-right: 20px;
-}
-.social a{
-    text-decoration: none;
+    justify-content: space-between;
+    padding: 10px;
 }
 
-
-
-
-section{
-padding: 100px 20px;
+.list-inf li , a{
+    list-style:none;
+    padding: 2px 2px;
+    color: white;
+    font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
 }
-@media all and (max-width: 800px){
-    .section{
-        flex-direction: column;
+.list-inf a:hover{
+    color: #fff; /* Color al pasar el cursor */
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+}
+
+footer i{
+    color: white;
+    font-size: 25px;
+    float: right;
+}
+.copyrigth{
+    text-align: center;
+    color: white;
+    font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+
+
+@media all and (max-width: 1122px){
+
+    .navbar{
+        display: flex;
+        position: relative;
+        max-height: 100px;
+        justify-content: space-evenly;
+        flex-wrap: row wrap;
+        align-items: center;
     }
     .menu{
-        flex-direction: column;
-        height: auto;
-    }
-    .aside{
         display: flex;
-        justify-content: center;
     }
-}
+     .logo{
+        display: flex;
+    }
+    .serch{
+        
+    }
+    .anuncios img{
+        margin-top: -30px;
+        max-width: 100%;
+    }
 
-@media all and (max-width: 600px){
+    }
+@media all and (max-width: 800px){
     .articulos{
         flex-direction: column;
     }
-}
-
-@media all and (max-width: 400px){
-    .aside{
-        flex-direction: column;
+    .menu i{
+        display: block;
     }
+    .off{
+        display: none;
+    }
+}
+@media all and (max-width: 740px){
+.articulos{
+    display: inline-block;
+}
+}
+@media all and (max-width: 660px){
+  
 }

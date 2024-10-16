@@ -4,68 +4,243 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GIGATECH</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Mono:ital,wght@0,700;1,700&family=Varela+Round&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Mono:ital,wght@0,500;1,500&family=Rubik+Mono+One&family=Varela+Round&display=swap');
+        </style>
+    <script src="https://kit.fontawesome.com/73a484dbcf.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Descubre todos nuestros productos tecnologicos para tu computadora y tambien los videojuegos, toda la tecnologia para actualizar tu ordenador o personalizar tu setup.">
+    <meta name="keywords" content="tecnologia,pc armadas,netbooks,impresoras,celulares,perifericos,auriculares,videojuegos">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="shortcut icon" href="img/wc3icon.ico" />
+    <link rel="shortcut icon" href="img/iconoweb.png" />
 </head>
 <body>
+    <!------------------Barra de navegacion----------------->
     <header><nav class="navbar">
-        <div class="logo"><img src="img/logo.png" alt=""></div>
+        <div class="logo"><img src="img/logo3.png" alt=""></div>  
         <form class="serch">
+            <!--------------------Barra de Busqueda-------------------->
             <input type="text" placeholder="Buscar...">
-            <button type="submit">Buscar</button>
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
-        <ul class="nav-links">
-        <li><a href="">HOME</a></li>
-        <li><a href="">SHOP</a></li>
-        <li><a href="">CONTACT</a></li>
-        <li><a href="">INICIAR SESION</a></li>
+        <ul class="menu"> <!------------------Barra de menú------------------->
+        <li><a href=""><i class="fa-solid fa-house"></i><span class="off">HOME</span></a></li>
+        <li><a href=""><i class="fa-solid fa-shop"></i><span class="off">SHOP</span></a>
+            <ul>
+            <li><a href="">Notebooks</a></li>
+            <li><a href="">Perifericos</ali>
+            <li><a href="">Impresoras</a></li>
+            <li><a href="">PC Armadas</a></li>
+            <li><a href="">Juegos</a></li>
+            </ul>
+        <li><a href=""><i class="fa-solid fa-address-book"></i><span class="off">CONTACT</span></a></li>
+        <li><a href=""><i class="fa-solid fa-user"></i><span class="off">SIGN IN</span></a></li>
     </ul>
+    <input type="checkbox" id="check">
+        <label for="check" class="check-btn"><i class="fa-solid fa-bars"></i></label>
     </nav>
     </header>
     <main>
         <div class="contain">
-            <section class="anuncios">
+            <section class="anuncios"><!----------------Seccion de anuncios y promociones----------------->
                 <article><img src="img/blackfriday.jpg" alt=""></article>
                 <article><img src="img/cybermonday.jpg" alt=""></article>
-            </section><hr><br>
-            <section class="ofert">
-                <div class="cab-ofert"><h2>Ofertas</h2></div>
-                <article></article>
-                <article></article>
-                <article></article>
-                <article></article>
-            </section><hr><br>
-            <section class="new-product">
-                <div class="cab-new-product"><h2>Nuevos Productos</h2></div>
-                <article></article>
-                <article></article>
-                <article></article>
-                <article></article>
             </section><hr>
-            <section>
-                <form action="post">
-                    <p>DEJANOS TU COMENTARIO</p>
-                    <label for="Nombre">Ingrese su Nombre : </label><br><input type="text" name="Nombre"><br>
-                    <label for="email">Ingrese su Email : </label><br><input type="email" name="email"><br>
-                    <label for="coment">Comentario : </label><br><input type="text" name="coment">
+            <section class="section"><!--------------------------seccion de articulos que ingresan---------------------------->
+                <div class="cab-article">
+                    <h1>Nuevos Productos</h1></div>
+                <article>
+                    <img src="img/product/product1.jpg" alt="mouse">
+                    <p>MOUSE LOGITECH M90 DARK MIDNIGHT GRAY</p>
+                    <p>$7.322</p>
+                </article>
+                <article>
+                    <img src="img/product/product2.jpg" alt="mouse">
+                    <p>AURICULARES REDMI BUDS 4 BLACK BLUETOOTH XIAOMI</p>
+                    <p>$52.272</p>
+                </article>
+                <article>
+                    <img src="img/product/product3.jpg" alt="mouse">
+                    <p>IMPRESORA HP SMART TANK 210</p>
+                    <p>$352.000</p>
+                </article>
+                <article>
+                    <img src="img/product/product4.jpg" alt="mouse">
+                    <p>JOYSTICK REDRAGON G807 SATURN</p>
+                    <p>$23.500</p>
+                </article>
+            </section><hr>
+            <section class="section"><!--------------------Seccion de notebooks--------------------->
+                <div class="cab-article"><h1>NOTEBOOKS</h1></div>
+                <article>
+                    <img src="img/product/product1.jpg" alt="mouse">
+                    <p>MOUSE LOGITECH M90 DARK MIDNIGHT GRAY</p>
+                    <p>$7.322</p>
+                </article>
+                <article>
+                    <img src="img/product/product2.jpg" alt="mouse">
+                    <p>AURICULARES REDMI BUDS 4 BLACK BLUETOOTH XIAOMI</p>
+                    <p>$52.272</p>
+                </article>
+                <article>
+                    <img src="img/product/product3.jpg" alt="mouse">
+                    <p>IMPRESORA HP SMART TANK 210</p>
+                    <p>$352.000</p>
+                </article>
+                <article>
+                    <img src="img/product/product4.jpg" alt="mouse">
+                    <p>JOYSTICK REDRAGON G807 SATURN</p>
+                    <p>$23.500</p>
+                </article>
+            </section><hr>
+            <section class="section"><!--------------------Seccion de perifericos--------------------->
+                <div class="cab-article"><h1>PERIFERICOS</h1></div>
+                <article>
+                    <img src="img/product/product1.jpg" alt="mouse">
+                    <p>MOUSE LOGITECH M90 DARK MIDNIGHT GRAY</p>
+                    <p>$7.322</p>
+                </article>
+                <article>
+                    <img src="img/product/product2.jpg" alt="mouse">
+                    <p>AURICULARES REDMI BUDS 4 BLACK BLUETOOTH XIAOMI</p>
+                    <p>$52.272</p>
+                </article>
+                <article>
+                    <img src="img/product/product3.jpg" alt="mouse">
+                    <p>IMPRESORA HP SMART TANK 210</p>
+                    <p>$352.000</p>
+                </article>
+                <article>
+                    <img src="img/product/product4.jpg" alt="mouse">
+                    <p>JOYSTICK REDRAGON G807 SATURN</p>
+                    <p>$23.500</p>
+                </article>
+            </section><hr>
+            <section class="section"><!--------------------Seccion de impresoras--------------------->
+                <div class="cab-article"><h1>IMPRESORAS</h1></div>
+                <article>
+                    <img src="img/product/product1.jpg" alt="mouse">
+                    <p>MOUSE LOGITECH M90 DARK MIDNIGHT GRAY</p>
+                    <p>$7.322</p>
+                </article>
+                <article>
+                    <img src="img/product/product2.jpg" alt="mouse">
+                    <p>AURICULARES REDMI BUDS 4 BLACK BLUETOOTH XIAOMI</p>
+                    <p>$52.272</p>
+                </article>
+                <article>
+                    <img src="img/product/product3.jpg" alt="mouse">
+                    <p>IMPRESORA HP SMART TANK 210</p>
+                    <p>$352.000</p>
+                </article>
+                <article>
+                    <img src="img/product/product4.jpg" alt="mouse">
+                    <p>JOYSTICK REDRAGON G807 SATURN</p>
+                    <p>$23.500</p>
+                </article>
+            </section><hr>
+            <section class="section"><!--------------------Seccion de PC Armadas--------------------->
+                <div class="cab-article"><h1>PC ARMADAS</h1></div>
+                <article>
+                    <img src="img/product/product1.jpg" alt="mouse">
+                    <p>MOUSE LOGITECH M90 DARK MIDNIGHT GRAY</p>
+                    <p>$7.322</p>
+                </article>
+                <article>
+                    <img src="img/product/product2.jpg" alt="mouse">
+                    <p>AURICULARES REDMI BUDS 4 BLACK BLUETOOTH XIAOMI</p>
+                    <p>$52.272</p>
+                </article>
+                <article>
+                    <img src="img/product/product3.jpg" alt="mouse">
+                    <p>IMPRESORA HP SMART TANK 210</p>
+                    <p>$352.000</p>
+                </article>
+                <article>
+                    <img src="img/product/product4.jpg" alt="mouse">
+                    <p>JOYSTICK REDRAGON G807 SATURN</p>
+                    <p>$23.500</p>
+                </article>
+            </section><hr>
+            <section class="section"><!--------------------Seccion de juegos--------------------->
+                <div class="cab-article"><h1>VIDEOJUEGOS</h1></div>
+                <article>
+                    <img src="img/product/product1.jpg" alt="mouse">
+                    <p>MOUSE LOGITECH M90 DARK MIDNIGHT GRAY</p>
+                    <p>$7.322</p>
+                </article>
+                <article>
+                    <img src="img/product/product2.jpg" alt="mouse">
+                    <p>AURICULARES REDMI BUDS 4 BLACK BLUETOOTH XIAOMI</p>
+                    <p>$52.272</p>
+                </article>
+                <article>
+                    <img src="img/product/product3.jpg" alt="mouse">
+                    <p>IMPRESORA HP SMART TANK 210</p>
+                    <p>$352.000</p>
+                </article>
+                <article>
+                    <img src="img/product/product4.jpg" alt="mouse">
+                    <p>JOYSTICK REDRAGON G807 SATURN</p>
+                    <p>$23.500</p>
+                </article>
+            </section><hr>
+            <section><!------------------------Formulario de encuesta---------------------->
+                <div class="cab-article"><h2>Dejanos tu comentario </h2></div> <!--reutilice la clase para no agregar mas codigo-->
+                <div class="contact-form-container">
+                <form action="#" method="post">
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div>
+                        <label for="edad">Codigo Postal</label>
+                        <input type="number" id="cpostal" name="cpostal" placeholder="Codigo Postal" required>
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escríbenos un mensaje..." required></textarea>
+                    </div>
+                    <div class="form-buttons">
+                        <button type="reset">Limpiar formulario</button>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </div>
                 </form>
             </section>
         </div>
     </main>
-    <aside><form action="post">
 
-    </form></aside>
     <footer>
-        <div class="copy">&copy;2024 FULL ENTERTAINMENT. Todos los derechos reservados</div>
-        <div class="social">
+        <div class="list-inf">
             <ul>
-                <li><a href="">Facebook</a></li>
-                <li><a href="">Instagram</a></li>
-                <li><a href="">Whatsapp</a></li>
-                <li><a href="">Twiter</a></li>
-                <li><a href="">Linkedin</a></li>
+                <li><h3>INFORMACION</h3></li>
+                <li><a href="">HOME</a></li>
+                <li><a href="">CONTACTO</a></li>
+                <li><a href="">MIS PEDIDOS</a></li>
             </ul>
-        </div>
+            <ul>
+                <li><h3>CATEGORIAS</h3></li>
+                <li><a href="">NOTEBOOKS</a></li>
+                <li><a href="">PC ARMADAS</a></li>
+                <li><a href="">IMPRESORAS</a></li>
+                <li><a href="">PERIFERICOS</a></li>
+                <li><a href="">JUEGOS</a></li>
+            </ul>
+            <ul>
+                <li><H3>SIGUENOS!</H3></li>
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+            </div>
+        <div class="copyrigth"><p>&copy;2024 FULL ENTERTAINMENT. Todos los derechos reservados</p></div>
     </footer>
 </body>
 </html>
