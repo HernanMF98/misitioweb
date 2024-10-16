@@ -363,7 +363,6 @@ footer i{
     display: inline-block;
 }
 }
-@media all and (max-width: 660px){
 
     .check-btn{
     display:block;
@@ -408,6 +407,4 @@ footer i{
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 110px;
-}
-
 }
