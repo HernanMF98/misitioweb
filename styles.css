@@ -499,4 +499,32 @@ footer i:hover{
 .list-inf li{
     font-size: 18px;
 }
+.cab-article h1{
+    font-size: 25px;
+}
+.cab-article i{
+    font-size: 30px;
+}
+/* Botón de limpiar */
+.contact-form-container button[type="reset"] {
+    background-color: #e74c3c;
+    color: #fff;
+    align-content: space-between;
+}
+
+/* Botón de enviar */
+.contact-form-container button[type="submit"] {
+    background-color: #2ecc71;
+    color: #fff;
+    align-content: space-between;
+}
+.list-inf h3{
+    font-size: 20px;
+}
+.list-inf li,a{
+    font-size: 17px;
+}
+footer i{
+    font-size: 22px;
+}
 }
