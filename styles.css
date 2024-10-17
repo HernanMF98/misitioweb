@@ -152,16 +152,27 @@ a{
 }
 /*------------------------Seccion de Ofertas-------------------------*/
 .cab-article{
+    display: flex;
+    justify-content: center;
     background-color:#697565;
+    border-radius: 3px;
     color: white;
     text-align: center;
     flex: 1 1 100%;
-    padding: 20px 0;
+    padding: 20px 20px;
+}
+.cab-article i{
+    font-size: 40px;
+    padding-right: 10px;
+    color: orangered;
+    -webkit-text-stroke: 2px black;
 }
 .cab-article img{
     max-width: 25%;
 }
 .cab-article h1{
+    -webkit-text-stroke: 2px black;
+    font-size: 40px;
     font-family: "Rubik Mono One", monospace;
     font-weight: 400;
     font-style: normal;
@@ -288,7 +299,9 @@ transform: scale(1.2);
     justify-content: space-between;
     gap: 10px;
 }
-
+.form-buttons button i{
+    padding-left: 5px;
+}
 .contact-form-container button {
     padding: 12px 20px;
     font-size: 1.1rem;
@@ -433,6 +446,7 @@ footer i:hover{
     height: 200px;
 }
     .check-btn{
+    position:fixed;
     display:block;
     float: right;
   }
@@ -478,5 +492,11 @@ footer i:hover{
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 110px;
+}
+.list-inf h3{
+    font-size: 20px;
+}
+.list-inf li{
+    font-size: 18px;
 }
 }
